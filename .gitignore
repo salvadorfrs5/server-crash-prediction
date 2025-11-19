@@ -20,13 +20,13 @@ venv/
 .DS_Store
 
 # --- Data files (DO NOT TRACK data in Git) ---
-data/
-*.csv
-*.tsv
-*.parquet
-*.log
-*.gz
-*.zip
+# data/
+# *.csv
+# *.tsv
+# *.parquet
+# *.log
+# *.gz
+# *.zip
 
 # Kaggle downloads
 kaggle.json
@@ -59,3 +59,5 @@ colab_outputs/
 # --- Git ---
 # Ignore local git-ignored copies
 *.orig
+
+GEMINI.md
