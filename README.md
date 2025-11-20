@@ -39,8 +39,75 @@ They will help predict server slowdowns more efficiently.
 - https://github.com/Azure/AzurePublicDataset
 - https://github.com/alibaba/clusterdata/tree/master
 - https://ita.ee.lbl.gov/html/contrib/NASA-HTTP.htm
-- https://www.kaggle.com/datasets/zoya77/cloud-workload-dataset-for-scheduling-analysis/data
+- https://www.kaggle.com/datasets/zoya77/cloud-workload-dataset-for-scheduling-analysis/data **(Currently Using)**
 - https://www.kaggle.com/datasets/gagansomashekar/microservices-bottleneck-detection-dataset
+
+## Project Structure
+
+```
+server-crash-prediction/
+├── data/
+│   └── cloud_workload_dataset.csv    # Cloud workload dataset (5000 records)
+├── notebooks/
+│   └── 01_exploration.ipynb          # Data exploration and model training
+├── requirements.txt                   # Python dependencies
+└── README.md                          # Project documentation
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8+
+- pip
+- VS Code with Python and Jupyter extensions (recommended)
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/server-crash-prediction.git
+cd server-crash-prediction
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Open the notebook:
+   - Open `notebooks/01_exploration.ipynb` in VS Code or JupyterLab
+   - Select your Python kernel
+   - Run cells sequentially
+
+## Implementation
+
+### Current Dataset
+
+We are using the **Cloud Workload Dataset** which contains 5000 job records with the following features:
+
+- **Job Metrics:** CPU Utilization, Memory Consumption, Task Execution Time
+- **System Metrics:** System Throughput, Task Waiting Time, Network Bandwidth Utilization
+- **Workload Characteristics:** Data Source, Number of Active Users
+- **Configuration:** Job Priority, Scheduler Type, Resource Allocation Type
+- **Target Variable:** Error Rate (converted to binary classification: high error vs normal)
+
+### Model Approach
+
+1. **Target Variable:** We classify jobs with error rates above the 75th percentile (3.8%) as "high error" situations
+2. **Feature Engineering:** One-hot encoding for categorical variables (Data Source, Job Priority, Scheduler Type, Resource Allocation Type)
+3. **Model:** Random Forest Classifier with balanced class weights
+4. **Evaluation:** Classification metrics, confusion matrix, and feature importance analysis
+
+### Notebook Overview
+
+The `01_exploration.ipynb` notebook includes:
+
+1. **Data Loading:** Load and inspect the cloud workload dataset
+2. **Feature Engineering:** Create binary target variable and encode categorical features
+3. **Data Preprocessing:** Train-test split and feature standardization
+4. **Model Training:** Random Forest classifier with 100 estimators
+5. **Evaluation:** Classification report, confusion matrix, and feature importance visualization
 
 ## Sources
 
