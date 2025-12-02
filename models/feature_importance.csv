@@ -1,0 +1,17 @@
+feature,importance
+System_Throughput_tasks/sec,0.10358448370324777
+Memory_Consumption_MB,0.10301673808330225
+Network_Bandwidth_Utilization_Mbps,0.10289584952701172
+Task_Execution_Time_ms,0.10080559430299638
+Number_of_Active_Users,0.10070676145688535
+Task_Waiting_Time_ms,0.09907739404581008
+CPU_Utilization_pct,0.09504197565064056
+Job_Priority_Medium,0.0442063038838074
+Job_Priority_Low,0.04309844688657125
+Scheduler_Type_FCFS,0.03235861636925784
+Scheduler_Type_Priority-Based,0.030952063073046526
+Data_Source_Enterprise DB,0.030647195239361786
+Data_Source_IoT,0.03047683819130633
+Data_Source_Social Media,0.030332748783720526
+Scheduler_Type_Round Robin,0.028970408351142125
+Resource_Allocation_Type_Static,0.023828582451892146

@@ -42,16 +42,55 @@ They will help predict server slowdowns more efficiently.
 - https://www.kaggle.com/datasets/zoya77/cloud-workload-dataset-for-scheduling-analysis/data **(Currently Using)**
 - https://www.kaggle.com/datasets/gagansomashekar/microservices-bottleneck-detection-dataset
 
+## Quick Start
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the notebook
+jupyter lab notebooks/01_exploration.ipynb
+```
+
+## Model Performance
+
+**Current Model**: RandomForestClassifier with SMOTE resampling (600 estimators)
+
+| Metric | Value |
+|--------|-------|
+| Accuracy | 71.0% |
+| Precision | 16.7% |
+| Recall | 4.4% |
+| F1-Score | 0.070 |
+
+**Top Predictive Features**:
+1. System Throughput (tasks/sec) - 10.4%
+2. Memory Consumption (MB) - 10.3%
+3. Network Bandwidth Utilization (Mbps) - 10.3%
+4. Task Execution Time (ms) - 10.1%
+5. Number of Active Users - 10.1%
+
+**Key Insight**: Numerical performance metrics are far more predictive than categorical features.
+
+See `RESULTS.md` for detailed analysis and future improvements.
+
 ## Project Structure
 
 ```
 server-crash-prediction/
 ├── data/
-│   └── cloud_workload_dataset.csv    # Cloud workload dataset (5000 records)
+│   └── cloud_workload_dataset.csv         # Cloud workload dataset (5000 records)
 ├── notebooks/
-│   └── 01_exploration.ipynb          # Data exploration and model training
-├── requirements.txt                   # Python dependencies
-└── README.md                          # Project documentation
+│   ├── 01_exploration.ipynb               # Main analysis and model training
+│   └── cloud_workload_cleaning.ipynb      # Data cleaning experiments
+├── models/
+│   ├── random_forest_smote_model.pkl      # Trained model (92 MB)
+│   ├── feature_importance.csv             # Feature rankings
+│   └── metrics.json                       # Performance metrics
+├── CLAUDE.md                              # Project instructions for AI
+├── RESULTS.md                             # Detailed results and analysis
+├── requirements.txt                       # Python dependencies
+└── README.md                              # Project documentation
 ```
 
 ## Getting Started
