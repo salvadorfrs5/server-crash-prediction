@@ -1,6 +1,6 @@
 # Preventing Server Crashes Using Tree-Based Models
 
-**Team:** Leilany Rojas, Ammar Salama, Salvador Frias, Mashel Khan
+**Team:** Leilany Rojas, Salvador Frias, Mashel Khan
 
 ## Topic
 
