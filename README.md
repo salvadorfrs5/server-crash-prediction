@@ -157,3 +157,10 @@ The `01_exploration.ipynb` notebook includes:
 5. **Lei et al. (2025)** – ML models trained on data center telemetry achieved <10% error in predicting performance and showed strong fairness across server types.
 6. **AWS Predictive Scaling (2024)** – Amazon’s predictive scaling service uses ML to proactively forecast and prevent CPU/memory overloads in ECS deployments.
 7. **Wen et al. – TempoScale (2024)** – TempoScale combined deep learning with workload pattern decomposition to improve overload prediction accuracy and responsiveness by over 30%.
+
+## Final Presentation
+[[https://docs.google.com/presentation/d/1ZUjiH3y6l2SxgfzibiPMy46f08Sddh67JbEKbWEpDi0/edit?usp=sharing
+](url)
+## Final Poster
+[https://docs.google.com/presentation/d/1TtHVp78VT6Dp2E4Tyb5VU_EIcuECFChilUtvzal8jrA/edit?usp=sharing
+](url)](url)
