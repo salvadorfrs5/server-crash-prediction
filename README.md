@@ -159,8 +159,8 @@ The `01_exploration.ipynb` notebook includes:
 7. **Wen et al. – TempoScale (2024)** – TempoScale combined deep learning with workload pattern decomposition to improve overload prediction accuracy and responsiveness by over 30%.
 
 ## Final Presentation
-[[https://docs.google.com/presentation/d/1ZUjiH3y6l2SxgfzibiPMy46f08Sddh67JbEKbWEpDi0/edit?usp=sharing
-](url)
+[https://docs.google.com/presentation/d/1ZUjiH3y6l2SxgfzibiPMy46f08Sddh67JbEKbWEpDi0/edit?usp=sharing
+](https://docs.google.com/presentation/d/1ZUjiH3y6l2SxgfzibiPMy46f08Sddh67JbEKbWEpDi0/edit?usp=sharing)
 ## Final Poster
 [https://docs.google.com/presentation/d/1TtHVp78VT6Dp2E4Tyb5VU_EIcuECFChilUtvzal8jrA/edit?usp=sharing
-](url)
+](https://docs.google.com/presentation/d/1TtHVp78VT6Dp2E4Tyb5VU_EIcuECFChilUtvzal8jrA/edit?usp=sharing)
