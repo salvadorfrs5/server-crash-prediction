@@ -1,7 +1,7 @@
 # Server Crash Prediction - Model Results
 
 **Project**: AI-Powered Server Crash Prediction using Cloud Workload Data
-**Team**: Leilany Rojas, Ammar Salama, Salvador Frias, Mashel Khan
+**Team**: Leilany Rojas, Salvador Frias, Mashel Khan
 **Program**: AI4ALL Ignite Program
 **Date**: December 2025
 
